@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/read-post.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <div id="page1">
+
+<nav>
+  <a href="/">HOME</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="/creat-post">CREAT-POST</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; 
+
+  <a href="/read-post" id="read_post">READ-POST</a>
+
+</nav>
+<hr>
+ <br> <br>
+ 
+<% post.forEach(function(ele ,index) { %>
+  <div id="showdata">
+  <img src="<%= ele.image %> " id="profile_img" height="30px">
+
+<div id="titl">
+  NAME :<%= ele.name %>
+  <br>
+  <%= ele.title %></div>
+
+<br>
+
+<br>
+<%= ele.sub_title %>
+<br>
+
+<%= ele.post_text %>
+<br> 
+<img src="<%= ele.post_image %>" id="post_img" height="100px">
+
+<br> 
+
+<br>
+ <!-- <button id="like"><i class="ri-heart-fill"></i></button> -->
+<a href="/like/<%= index%>" id="like">❤️<%= ele.like %> </a>
+ &nbsp; &nbsp; &nbsp; 
+<a href="/delete/<%= index %>" id="delete">Delete</a>
+ &nbsp;
+  <a href="/update/<%= index %>" id="update"> Update</a>
+  <br> <br>
+<p><%= ele.date %></p>
+
+  </div>
+  <br><br><br>
+<% }) %>
+<br> <br>
+
+
+  </div>
+
+</body>
+</html>

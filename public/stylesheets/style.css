@@ -1,0 +1,55 @@
+
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  html,body{
+  height: 100%;
+  width: 100%; 
+  }
+
+
+#page1{
+    /* background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Best-Website-New-Wallpaper.jpg); */
+    background-size: cover;
+    background-image: url(https://th.bing.com/th/id/OIP.NoAPufB1c7EEd22ybTUvpQHaD4?pid=ImgDet&rs=1);
+    
+}
+
+
+#page1{
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    
+}
+#home{
+  color: red;
+  font-size: 18px;
+  text-decoration: underline white;
+}
+
+h1{
+  text-align: center;
+margin-top: 10%;
+}
+nav{
+  color: white;
+
+  margin-top:0%;
+padding: 0px 30px;
+height: 60px;
+width: 100%;
+background-color:rgb(0, 0, 0) ;
+display: flex;
+align-items: center;
+justify-content: left;
+
+}
+nav a{
+  color: white;
+
+}
+

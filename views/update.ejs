@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/update.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="page1">
+
+<nav>
+  <a href="/">HOME</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="/create-post" id="creat-post">CREAT-POST</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; 
+
+  <a href="/read-post">READ-POST</a>
+ <br>
+</nav>
+<hr>
+
+<form action="/update/<%=index %>" method="post">
+  <h1>UPDATE</h1>
+<br>
+    <input value="<%= post.image %> " name="image" type="url" placeholder="profile-image" height="100px" width="100px">
+    <br> <br>
+    <input value="<%= post.name %>" name="name" type="text" placeholder="name">
+    <br> <br>
+    <input value="<%= post.title %>" name="title"  type="text" placeholder="title">
+    <br><br>
+    <input value="<%= post.sub_title %>" name="sub_title" type="text"  placeholder="sub-title">
+    <br><br>
+    <input value="<%= post.post_text %>" name="post_text"  type="text" placeholder="post-text">
+    <br><br>
+    <input  value="<%= post.post_image %>" name="post_image" type="url" placeholder="post -image">
+    
+    <br> <br>
+    <button>submit</button>
+    
+    
+    
+    </form>
+  </div>
+
+</body>
+</html>
